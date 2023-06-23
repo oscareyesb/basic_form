@@ -1,0 +1,16 @@
+<h1>Crear Post</h1>
+<br><br>
+
+<%= form_with model: @post, method: :post do |form| %>
+    <div>
+        <%= form.label :title, "Titulo del post"%>
+        <%= form.text_field :title %>
+    </div>
+    <div>
+        <%= form.label :content, "Contenido"%>
+        <%= form.text_field :content %>
+    </div>
+    <div>
+        <%= form.submit "Enviar"%>
+    </div>
+<% end %>
